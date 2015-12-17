@@ -10,7 +10,7 @@ $url = $_SERVER["REQUEST_URI"];
 # including the required filesystem
 require_once(ROOT.DS."config".DS."init.php");
 require_once(ROOT.DS.'config'.DS.'config.php');
-
+require_once(VIEW_PATH.DS."index.php");
 Config::set("a","b");
 $router = new Route($url);
 
@@ -18,5 +18,5 @@ echo "<pre>";
 print_r($router->get($url));
 echo "<hr>";
 
-include_once(VIEW_PATH.DS."index.php");
+
 

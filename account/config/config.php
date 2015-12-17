@@ -6,6 +6,8 @@
  * Time: 9:54 AM
  */
 
+Config::set("website","localhost");
+
 // Routes válidas e métodos a serem chamados
 Config::set("valid_requests" , array(
     "" =>  array(

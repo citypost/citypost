@@ -1,6 +1,6 @@
 RewriteEngine on
-RewriteCond $1 !^(index\.php|images|robots\.txt)
-RewriteRule ^(.*)$ /index.php/$1 [L]
+RewriteRule !\.(js|ico|gif|jpg|png|css|html|swf|flv|xml|css)$ index.php [QSA,L]
+#RewriteRule ^(.*)$ /index.php/$1 [L]
 
 # RewriteCond %{DOCUMENT_ROOT} !-f
 # RewriteRule !\.(js|ico|gif|jpg|png|css|html|swf|flv|xml)$ index.php [QSA,L]
