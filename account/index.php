@@ -14,9 +14,12 @@ require_once(VIEW_PATH.DS."index.php");
 Config::set("a","b");
 $router = new Route($url);
 
+
+echo $url;
 echo "<pre>";
 print_r($router->get($url));
 echo "<hr>";
+
 
 
 
