@@ -7,54 +7,60 @@
  */
 
 $sidebar_divs = array(
-    ""
+    array(
+        "img"   =>  "account/www/images/pixel.png",
+        "text"  =>  "Os meus serviços",
+        "href"  =>  "#",
+        "state" =>  "red",
+    ),
+    array(
+        "img"   =>  "account/www/images/pixel.png",
+        "text"  =>  "Parcel Delivery",
+        "href"  =>  "#",
+        "state" =>  "active",
+    ),
+    array(
+        "img"   =>  "account/www/images/pixel.png",
+        "text"  =>  "iPOST Delivery",
+        "href"  =>  "#",
+        "state" =>  "",
+    ),
+    /*
+    array(
+        "img"   =>  "imagens/right_click.png",
+        "text"  =>  "eAddress",
+        "href"  =>  "#",
+        "state" =>  "",
+    )
+    */
+
 );
 ?>
 
 <div class="col-lg-3 sidebarGeral">
 
-    <div class="sidebar">
-        <div class="sidebarDivs">
-            <div class="sidebarSeta">
-                <img alt src="imagens/right_click.png" style="width:100%;" />
+    <div class="sidebar sidebar-border-top-red">
+        <?php foreach($sidebar_divs as $item){ ?>
+            <div class="sidebar-ul <?= $item['state']; ?>">
+                <div class="sidebarSeta">
+                    <img alt src="<?= $item['img']; ?>" style="width:100%;" />
+                </div>
+                <div class="sidebarA">
+                    <a href="<?= $item['href']; ?>">
+                        <h4 class="sidebarH sidebarLH" style="line-height:50px;"><?= $item['text']; ?></h4>
+                    </a>
+                </div>
             </div>
-            <div class="sidebarA">
-                <a href="envelopagem.html">
-                    <h4 class="sidebarH sidebarLH" style="line-height:50px;">Parcel Delivery</h4>
-                </a>
-            </div>
-        </div>
-        <div class="sidebarDivs">
-            <div class="sidebarSeta">
-                <img alt src="imagens/right_click.png" style="width:100%;" />
-            </div>
-            <div class="sidebarA">
-                <a href="envelopagem.html">
-                    <h4 class="sidebarH sidebarLH" style="line-height:50px;">Parcel Delivery</h4>
-                </a>
-            </div>
-        </div>
-        <div class="sidebarDivs">
-            <div class="sidebarSeta">
-                <img alt src="imagens/right_click.png" style="width:100%;" />
-            </div>
-            <div class="sidebarA">
-                <a href="servicos-de-dados.html">
-                    <h4 class="sidebarH sidebarLH sidebarLH3" style="line-height:50px;">iPOST Delivery</h4>
-                </a>
-            </div>
-        </div>
-        <div class="sidebarDivs">
-            <div class="sidebarSeta">
-                <img alt src="imagens/right_click.png" style="width:100%;" />
-            </div>
-            <div class="sidebarA">
-                <a href="servicos-de-dados.html">
-                    <h4 class="sidebarH sidebarLH sidebarLH3" style="line-height:50px;">eAddress</h4>
-                </a>
-            </div>
-        </div>
-    </div>
+            <div class="sidebar-ul-divider"></div>
+        <?php } ?>
+
+        <?php foreach ($this->scope['users'] as $user) {
+            print_r($user);
+
+        }
+        ?>
+
+</div>
 
 </div>
 

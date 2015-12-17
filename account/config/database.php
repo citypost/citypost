@@ -1,7 +1,23 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: filipe_2
- * Date: 12/17/2015
- * Time: 9:48 AM
- */
+
+use Illuminate\Database\Capsule\Manager as Capsule;
+
+    $capsule = new Capsule();
+    $capsule->addConnection([
+        'driver' => Config::get("driver"),
+        'host' => Config::get("host"),
+        'database' => Config::get("database"),
+        'username' => Config::get("username"),
+        'password' => Config::get("password"),
+        'charset'   => Config::get("charset"),
+        'collation' => Config::get("coalition"),
+        'prefix'    => Config::get("prefix"),
+    ]);
+
+    $capsule->setAsGlobal();    //activate static methods
+    /*
+     * $capsule->setCacheManager();
+     * $capsule->setEventDispatcher();
+     */
+    $capsule->bootEloquent();
+

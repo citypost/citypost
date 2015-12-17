@@ -31,7 +31,7 @@
                     </div>
                     <div class="navbar-collapse" id="navbar-search">
                         <ul class="nav navbar-nav navbar-right">
-                            <p class="navbar-text"><span class="glyphicon glyphicon-user"></span><span style="color:white;">Área de Cliente | </span><a href="http://www2.citypost.pt/ClientArea/Account/Login.aspx" class="navbar-link"><span class="glyphicon"></span>Entrar</a></p>
+                            <p class="navbar-text"><span class="glyphicon glyphicon-user"></span><span style="color:white;">Área de Cliente | </span><a href="<?=Config::get('website').DS."account".DS."login";?>" class="navbar-link"><span class="glyphicon"></span>Entrar</a></p>
                             <!--<li><a href="#">Entrar</a></li>-->
                             <form class="navbar-form navbar-right" role="search">
                                 <div class="input-group">

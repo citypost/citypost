@@ -1,0 +1,9 @@
+{
+    "autoload": {
+        "classmap":
+        ["classes/","controllers/","models/"]
+    },
+    "require": {
+        "illuminate/database": "^5.1"
+    }
+}

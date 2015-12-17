@@ -33,10 +33,10 @@
 
     <!-- Latest compiled and minified CSS -->
     <style type="text/css"></style>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="account/www/css/bootstrap.min.css">
     <!--     Fonts      -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800italic,700italic,700,600italic,600,400italic,300italic,300,800' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='account/www/css/google-fonts.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="account/www/css/fontawesome.css">
     <!--     CSS        -->
     <link href="static/css/styling.css" rel="stylesheet" type="text/css">
     <style type="text/css">

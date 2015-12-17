@@ -1,0 +1,36 @@
+$grey : #E9E9E9;
+$dark-grey: #D5D5D5;
+$red: #E1202C;
+
+
+.sidebar-ul{
+  background-color: #FFF;
+  height: 70px;
+
+  hr .small{
+    margin: 0 auto;
+    background: #CCC;
+    width: 750%;
+    float: none
+  }
+}
+
+.sidebarSeta{
+  margin: 0;
+
+}
+.sidebar-ul .active{
+  background-color: $dark-grey;
+
+}
+
+.sidebar-border-divider{
+  border-top: 1px solid;
+  width: 75%;
+  float: none;
+  margin: 0 auto
+}
+
+.sidebar-border-top-red{
+  border-top: 4px solid $red;
+}

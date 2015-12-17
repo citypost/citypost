@@ -17,6 +17,10 @@ class Route{
         $this->uri = $uri;
     }
 
+    private function declareController($var){
+        return ucfirst($var)."Controller";
+    }
+
     private function compare($uri){
         $this->uri = $uri;
         $this->uri = trim($this->uri, "/");
@@ -26,15 +30,16 @@ class Route{
 
 
         if(array_key_exists($this->uri, Config::get("valid_requests"))){
-            #print_r(Config::get("valid_requests")[$this->uri]);
             if(array_key_exists('middleware', Config::get("valid_requests")[$this->uri])){
-                echo "Tem Middleware";
+                foreach (Config::get("valid_requests")[$this->uri]['middleware'] as $middleware) {
+                    Middleware::run($middleware);
+                }
             }
-            $this->controller = Config::get("valid_requests")[$this->uri]['controller'];
+            $this->controller = $this->declareController(Config::get("valid_requests")[$this->uri]['controller']);
             $this->method = Config::get("valid_requests")[$this->uri]['method'];
         }else{
             #print_r(Config::get("default_request")["not_found"]);
-            $this->controller = Config::get("default_request")["not_found"]['controller'];
+            $this->controller = $this->declareController(Config::get("default_request")["not_found"]['controller']);
             $this->method = Config::get("default_request")["not_found"]['method'];
         }
     }
@@ -46,6 +51,7 @@ class Route{
             $object_method = $this->method;
 
             $object_controller->$object_method();
+
         }
     }
 }

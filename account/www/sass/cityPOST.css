@@ -1,0 +1,25 @@
+.sidebar-ul {
+  background-color: #FFF;
+  height: 70px; }
+  .sidebar-ul hr .small {
+    margin: 0 auto;
+    background: #CCC;
+    width: 750%;
+    float: none; }
+
+.sidebarSeta {
+  margin: 0; }
+
+.sidebar-ul .active {
+  background-color: #D5D5D5; }
+
+.sidebar-border-divider {
+  border-top: 1px solid;
+  width: 75%;
+  float: none;
+  margin: 0 auto; }
+
+.sidebar-border-top-red {
+  border-top: 4px solid #E1202C; }
+
+/*# sourceMappingURL=cityPOST.css.map */

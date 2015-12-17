@@ -21,6 +21,10 @@
     </div>
 
     <?php include_once(VIEW_PATH . DS . "footer.php"); ?>
+    <?php foreach ($this->scope['scripts'] as $script) { ?>
+        <script src="<?= Config::get('website').DS.$script; ?>.js" ></script>
+    <?php } ?>
+
     </body>
 </html>
 

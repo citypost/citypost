@@ -7,5 +7,16 @@
  */
 
 class Controller{
+
     protected $scope = array();
+
+    public function __construct(){
+        $this->scope["message"]="";
+        $this->scope["title"]="";
+        $this->scope["scripts"]= array();
+    }
+
+    protected function rest($array){
+        return json_encode($array);
+    }
 }

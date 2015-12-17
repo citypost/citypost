@@ -3,9 +3,9 @@
     Author     : Pedro Ferreira, for CityPOST
 
     CityPOST Panthomine:
-        'black' is lighter:     rgb(53,​ 53,​ 53)  || #353535
-        and a little darker:    rgb(41,​ 41,​ 41)  || #292929
-        'red' is darker:        rgb(229,​ 28,​ 35) || #E51C23
+        'black' is lighter:     rgb(53,â€‹ 53,â€‹ 53)  || #353535
+        and a little darker:    rgb(41,â€‹ 41,â€‹ 41)  || #292929
+        'red' is darker:        rgb(229,â€‹ 28,â€‹ 35) || #E51C23
 
 */
 
@@ -72,7 +72,7 @@ ul#social-cell li a {
 }
 
 
-/*  And the f#$%&§g border radius of all that's forms related and menu's:   */
+/*  And the f#$%&Â§g border radius of all that's forms related and menu's:   */
 
 #navbar-zero,
 #navbar-zero li,
@@ -233,7 +233,7 @@ _____________________________________
     padding-right: 0px;/*We have also to center all the inside .navbar-nav's:                                                      */
     width: 986px
 max-width: 986px;
-    margin: 0 auto;/*  After colapsing, on small widths, DON'T' fix width anymore (§§)                     */
+    margin: 0 auto;/*  After colapsing, on small widths, DON'T' fix width anymore (Â§Â§)                     */
     border-top-right-radius:3px;
     border-top-left-radius:3px;
     margin-left: 0px !important;
@@ -2128,7 +2128,7 @@ a:hover{
 /* So, we have for small devices (tablets, 768px and up) */
 
 @media only screen and (max-width: 767px) {
-    /*(§§) Adjust width not to be fixed anymore ==> 100%:                                                                                   */
+    /*(Â§Â§) Adjust width not to be fixed anymore ==> 100%:                                                                                   */
     #navbar-second .navbar-collapse {
         width: 100%;
         margin-left: 0px;
