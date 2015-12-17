@@ -19,6 +19,6 @@ function __autoload($class_name){
     }elseif(file_exists($models_path)){
         include_once($models_path);
     }else{
-        throw new Exception("Não foi possível incluir a class $class_name");
+        echo "NÃ£o foi possÃ­vel incluir a class $class_name";
     }
 }

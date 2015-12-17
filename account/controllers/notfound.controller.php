@@ -8,18 +8,17 @@
 
 class Notfound extends Controller{
 
-    private $scope = array();
-    private $title = "Página inexistente";
 
 
     public function index(){
 
+        $title = "Ooops!";
         $message = "O url que escolheu não existe, por favor tente mais tarde";
-        array_push($this->scope,$this->title);
+        array_push($this->scope,$title);
         array_push($this->scope,$message);
 
-
-        print_r($this->scope);
+        $view = new View('notfound', $this->scope);
+        $view->render();
     }
 
 }

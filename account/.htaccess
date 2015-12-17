@@ -1,12 +1,5 @@
 RewriteEngine on
-RewriteRule !\.(js|ico|gif|jpg|png|css|html|swf|flv|xml|css)$ index.php [QSA,L]
-#RewriteRule ^(.*)$ /index.php/$1 [L]
 
-# RewriteCond %{DOCUMENT_ROOT} !-f
-# RewriteRule !\.(js|ico|gif|jpg|png|css|html|swf|flv|xml)$ index.php [QSA,L]
-
-#RewriteCond %{REQUEST_FILENAME} !-f
-#RewriteCond %{REQUEST_FILENAME} !-d
-#RewriteCond %{REQUEST_FILENAME} !-l
-
-#RewriteRule .* index.php [L]
+RewriteCond %{REQUEST_URI} !/ajax
+RewriteCond %{REQUEST_URI} !/www
+RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]

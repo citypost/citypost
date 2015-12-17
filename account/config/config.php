@@ -8,7 +8,7 @@
 
 Config::set("website","http://localhost");
 
-// Routes válidas e métodos a serem chamados
+// Routes vÃ¡lidas e mÃ©todos a serem chamados
 Config::set("valid_requests" , array(
     "account" =>  array(
         "controller" => "user",
@@ -27,7 +27,7 @@ Config::set("valid_requests" , array(
 
 Config::set("default_request",array(
     "not_found"  =>  array(
-        "controller"    =>  "notound",
+        "controller"    =>  "notfound",
         "method"        =>  "index"
     )
 ));

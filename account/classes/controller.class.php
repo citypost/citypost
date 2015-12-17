@@ -7,5 +7,5 @@
  */
 
 class Controller{
-
+    protected $scope = array();
 }
