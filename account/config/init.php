@@ -8,7 +8,7 @@
 
 function __autoload($class_name){
 
-    $app_path = ROOT.DS.'app'.DS.strtolower($class_name).'.class.php';
+    $app_path = ROOT.DS.'classes'.DS.strtolower($class_name).'.class.php';
     $controllers_path = ROOT.DS.'controllers'.DS.strtolower($class_name).'.controller.php';
     $models_path = ROOT.DS.'models'.DS.strtolower($class_name).'.model.php';
 
