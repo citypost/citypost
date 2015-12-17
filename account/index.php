@@ -6,12 +6,17 @@ define('VIEW_PATH', ROOT.DS."views");
 
 # Getting the urls for the MVC
 $url = $_SERVER["REQUEST_URI"];
-$method = $_SERVER["REQUEST_METHOD"];
 
 # including the required filesystem
 require_once(ROOT.DS."config".DS."init.php");
+require_once(ROOT.DS.'config'.DS.'config.php');
 
 Config::set("a","b");
+$router = new Route($url);
 
-//Config::set("teste","returned string");
-//echo Config::get("teste");
+echo "<pre>";
+print_r($router->get($url));
+echo "<hr>";
+
+include_once(VIEW_PATH.DS."index.php");
+
